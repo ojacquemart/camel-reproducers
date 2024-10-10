@@ -1,0 +1,11 @@
+camel:
+  rest:
+    component: servlet
+    context-path: /api
+    binding-mode: off
+
+    client-request-validation: true
+
+  servlet:
+    mapping:
+      context-path: ${camel.rest.context-path}/*
