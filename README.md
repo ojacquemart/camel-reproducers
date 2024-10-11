@@ -25,3 +25,9 @@ It seems like there is a problem in the [DefaultRestClientRequestValidator](http
 The body is resolved as an empty string and not as a `null` value.
 
 If the client request validation is disabled, the request will succeed.
+
+## Tomcat standalone and JNDI
+
+There is a problem if the application uses the `json-validator`spring boot starter and is deployed in a standalone tomcat.
+
+See https://github.com/spring-projects/spring-boot/issues/35091

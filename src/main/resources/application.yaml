@@ -9,3 +9,8 @@ camel:
   servlet:
     mapping:
       context-path: ${camel.rest.context-path}/*
+
+logging:
+  level:
+    org.apache.camel: DEBUG
+    org.springframework.boot: DEBUG
